@@ -52,7 +52,7 @@ options:
 
 EXAMPLES = '''
     - name: "[Panorama] Push services"
-      napalm_install_config:
+      pan_xpath:
         hostname: "{{ inventory_hostname }}"
         api_key: "{{ pan_api_key }}"
         xml_file: "build/{{ inventory_hostname }}/tmp/PAN-Office-Firewalls.xml"
