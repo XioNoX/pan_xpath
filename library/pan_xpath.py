@@ -43,11 +43,6 @@ options:
         required: False
         default: candidate
         choices: [active, candidate]
-    verify_certificate:
-        description:
-          - Stop if invalid SSL/TLS certificate
-        required: False
-        default: False
 '''
 
 EXAMPLES = '''
