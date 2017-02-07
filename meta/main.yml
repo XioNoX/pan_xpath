@@ -1,0 +1,17 @@
+---
+galaxy_info:
+  author: Arzhel Younsi
+  description: Module that loads part of XML files into Palo Alto Network devices.
+  issue_tracker_url: https://github.com/XioNoX/pan_xpath
+  license: MPL
+  min_ansible_version: 2.0
+
+  platforms:
+  - name: GenericLinux
+    versions:
+    - any
+
+  categories:
+  - networking
+
+dependencies: []
