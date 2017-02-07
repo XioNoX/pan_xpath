@@ -11,7 +11,6 @@ short_description: "Loads XML into PAN devices."
 description:
     - "Loads XML into PAN devices."
 requirements:
-    - napalm
     - urllib2
     - urllib
     - ssl
@@ -153,9 +152,7 @@ def main():
         # Convert reply back to a string
         select_reply = etree.tostring(reply_result_diff, method="xml").strip()
         # remove white spaces from beginning and end as well as new line on each array items (lines)
-        #select_reply_strip = map(str.strip, select_reply.splitlines())
         select_reply_strip = [x.strip() for x in select_reply.split('\n')]
-        #file_subtree_str_strip = map(str.strip, file_subtree_str.splitlines())
         file_subtree_str_strip = [x.strip() for x in file_subtree_str.split('\n')]
         # Then diff the two
         d = difflib.Differ()
